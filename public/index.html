@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie API Documentation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        :root { --primary: #e50914; } /* Netflix Red */
+        body { padding: 20px; }
+        .method { font-weight: bold; padding: 4px 8px; border-radius: 4px; margin-right: 10px; color: white; }
+        .get { background: #2ecc71; }
+        .post { background: #3498db; }
+        .delete { background: #e74c3c; }
+        pre { background: #1a1a1a; padding: 15px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <hgroup>
+            <h1>🎬 Movie API Docs</h1>
+            <h2>RESTful API for movie management and user authentication</h2>
+        </hgroup>
+
+        <hr>
+
+        <section id="auth">
+            <h3>Authentication</h3>
+            <p>Most endpoints require a <strong>JWT Token</strong>. Login to receive your token and include it in the headers: <code>Authorization: Bearer <your_token></code></p>
+        </section>
+
+        <section id="endpoints">
+            <h3>Endpoints</h3>
+
+            <article>
+                <header><span class="method post">POST</span> <code>/auth/login</code></header>
+                <p>Login to receive an Access Token.</p>
+                <strong>Body:</strong>
+                <pre><code>{
+  "username": "your_user",
+  "password": "your_password"
+}</code></pre>
+            </article>
+
+            <article>
+                <header><span class="method get">GET</span> <code>/movies</code></header>
+                <p>Returns a list of all movies in the database (Requires Token).</p>
+            </article>
+
+            <article>
+                <header><span class="method post">POST</span> <code>/auth/register</code></header>
+                <p>Create a new user account.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

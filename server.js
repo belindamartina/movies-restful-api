@@ -13,6 +13,7 @@ const db = mongoose.connection
 db.on('error', (error)=> console.error(error))
 db.once('open', ()=> console.log('connected to database'))
 
+app.use(express.static('public'))
 app.use(express.json())
 
 const moviesRouter = require('./routes/movies')
@@ -22,6 +23,5 @@ app.use('/auth', moviesRouter)
 const PORT = process.env.PORT || 3000
 app.listen(PORT,()=>console.log(`listening to port ${PORT}...`));
 
-app.get('/movies', (req,res) => {
 
-})
+module.exports = app
