@@ -4,7 +4,7 @@ A secure RESTful API built with Node.js and Express, featuring JWT-based authent
 
 ## 🚀 Live Demo
 
-**API Endpoint:** [https://your-api.vercel.app](https://movies-restful-q9ismtu4d-belinda-martinas-projects.vercel.app/)
+**API Endpoint:** [https://movies-restful-q9ismtu4d-belinda-martinas-projects.vercel.app/](https://movies-restful-q9ismtu4d-belinda-martinas-projects.vercel.app/)
 
 ---
 
@@ -13,7 +13,7 @@ A secure RESTful API built with Node.js and Express, featuring JWT-based authent
 - **User Authentication:** Secure Registration and Login using hashed passwords.
 - **JWT Security:** Protected routes using JSON Web Tokens (Bearer Token).
 - **Cloud Database:** Fully integrated with MongoDB Atlas.
-- **Automated Deployment:** CI/CD pipeline via GitHub Actions to Vercel.
+- **Automated Deployment:** CI/CD pipeline via GitHub to Vercel.
 - **Documentation:** Built-in HTML documentation for easy testing.
 
 ## 🛠️ Tech Stack
