@@ -1,14 +1,14 @@
-# 🎬 Movie Auth API
+#  Movie Auth API
 
 A secure RESTful API built with Node.js and Express, featuring JWT-based authentication and a cloud-hosted MongoDB Atlas database.
 
-## 🚀 Live Demo
+##  Live Demo
 
 **API Endpoint:** [https://movies-restful-q9ismtu4d-belinda-martinas-projects.vercel.app/](https://movies-restful-q9ismtu4d-belinda-martinas-projects.vercel.app/)
 
 ---
 
-## ✨ Features
+##  Features
 
 - **User Authentication:** Secure Registration and Login using hashed passwords.
 - **JWT Security:** Protected routes using JSON Web Tokens (Bearer Token).
@@ -16,7 +16,7 @@ A secure RESTful API built with Node.js and Express, featuring JWT-based authent
 - **Automated Deployment:** CI/CD pipeline via GitHub to Vercel.
 - **Documentation:** Built-in HTML documentation for easy testing.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Runtime:** Node.js
 - **Framework:** Express.js
@@ -24,16 +24,16 @@ A secure RESTful API built with Node.js and Express, featuring JWT-based authent
 - **Auth:** JSON Web Tokens (JWT) & Bcrypt
 - **Hosting:** Vercel
 
-## 📂 API Endpoints
+##  API Endpoints
 
-### 🔐 Authentication
+###  Authentication
 
 | Method | Endpoint         | Description         | Request Body (JSON)                | Auth Required |
 | :----- | :--------------- | :------------------ | :--------------------------------- | :-----------: |
 | `POST` | `/auth/register` | Register a new user | `{"username": "", "password": ""}` |      ❌       |
 | `POST` | `/auth/login`    | Login & get JWT     | `{"username": "", "password": ""}` |      ❌       |
 
-### 🎬 Movies
+###  Movies
 
 | Method   | Endpoint      | Description    | Headers                         | Auth Required |
 | :------- | :------------ | :------------- | :------------------------------ | :-----------: |
